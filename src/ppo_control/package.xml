@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ppo_control</name>
+  <version>0.0.1</version>
+  <description>ROS2 node for Unitree Go2 control using PPO policy with ONNX runtime</description>
+  <maintainer email="pavel@example.com">Pavel</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Зависимости сборки -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Python зависимости для ROS2 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+
+  <!-- Для поиска ресурсов пакета -->
+  <exec_depend>ament_index_python</exec_depend>
+
+  <!-- Сообщения Unitree -->
+  <exec_depend>unitree_go</exec_depend>
+  <exec_depend>unitree_api</exec_depend>
+
+  <!-- Python пакеты -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-transforms3d</exec_depend>
+  <exec_depend>python3-onnxruntime</exec_depend>
+
+  <!-- Для виртуального окружения -->
+  <exec_depend>python3-venv</exec_depend>
+
+  <!-- Тесты -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

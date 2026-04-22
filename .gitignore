@@ -1,0 +1,61 @@
+# === ROS2 build artifacts ===
+build/
+install/
+log/
+
+# === Python virtual env ===
+venv/
+.venv/
+env/
+ppo_env/
+
+# === Python cache ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === ROS2 ament files ===
+ament_cmake_index/
+share/ament_index/
+
+# === IDEs ===
+.vscode/
+.idea/
+
+# === system files ===
+.DS_Store
+*.swp
+
+# === logs / temp ===
+*.log
+
+# === colcon ===
+colcon.meta
+colcon.log
+
+# === pip / python packaging ===
+*.egg-info/
+dist/
+.eggs/
+
+# === pytest ===
+.pytest_cache/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# ROS bag files (если будешь писать данные)
+*.db3
+*.bag
+
+# Mujoco / Isaac / RL мусор
+*.pt
+*.pth
+*.onnx
+runs/
+logs/
+
+# === simlink-install ===
+install//lib/.so
+install//lib/.py
